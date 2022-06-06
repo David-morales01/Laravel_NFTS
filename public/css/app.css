@@ -1,0 +1,814 @@
+:root{
+    --background-header:#656474 ;
+    --background-header-color2:#656474 ;
+    --background-main:#ffffff ;
+    --background-footer:#f9f8f8 ;
+    --background-nft:white ;
+    --background-nft-borde:#CACACA ;
+    --color-text:black;
+    --color-svg:white;
+    --color-components:#5142FC;
+ 
+    --background-header-dark:rgb(20, 20, 31) ;
+    --background-header-color2-dark:#32323f ;
+    --background-main-dark:rgb(20, 20, 31) ;
+    --background-footer-dark:#0d0d11 ;
+    --color-text-dark:white;
+    
+    --background-nft-borde-dark:transparent ;
+    --background-nft-dark:#343444 ;
+    --color-svg-dark:white;
+    --color-components-dark:#5142FC;
+} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+} 
+li {
+    list-style: none;
+    position: relative;
+} 
+a {
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+} 
+button {
+    cursor: pointer;
+} 
+.header svg,
+.footer svg{
+    fill: var(--color-svg); 
+} 
+.darkmode .header svg,
+.darkmode .footer svg{
+    fill: var(--color-svg-dark); 
+} 
+body {
+    position: relative;
+    min-height: 100vh;
+    min-width: 400px;
+    width: 100%;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-main); 
+} 
+body.darkmode{
+    
+    color: var(--color-text-dark); 
+    background-color: var(--background-main-dark); 
+} 
+.darkmode .header a{
+    
+    color: var(--color-text-dark); 
+} 
+.header__container,
+.main,
+.footer { 
+    -webkit-padding-start: 70px; 
+            padding-inline-start: 70px; 
+    -webkit-padding-end: 20px; 
+            padding-inline-end: 20px;
+} 
+.header__container,
+.header__container>div,
+.menu>ul,
+.right__options>button,
+.header__container__2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+} 
+.header { 
+    transition: 1s;
+    background-color: var(--background-header);
+    color: var(--color-text-dark); 
+} 
+.darkmode .header {  
+    background-color: var(--background-header-dark);
+} 
+.header__container {
+    width: 100%;
+    padding-block: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.362);
+} 
+.header__container__2 { 
+    justify-content: center;
+    padding-block: 40px; 
+    background-color: var(--background-header-color2);
+    flex-wrap: wrap;
+} 
+.darkmode .header__container__2 {  
+    background-color: var(--background-header-dark); 
+} 
+.header__container__2>.title {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 48px; 
+    -webkit-margin-after: 8px; 
+            margin-block-end: 8px;
+} 
+.header__container__2 .menu li {
+    margin-inline: 10px;
+} 
+.logo__container>span {
+    -webkit-margin-start: 10px;
+    margin-inline-start: 10px;
+    font-size: 1.5em;
+    font-weight: 900;
+} 
+.darkmode .fire .stop1 {
+    stop-color: #E950E5;
+} 
+.darkmode .fire .stop2 {
+    stop-color: #4B50E6;
+    offset: 1;
+} 
+.fire .stop1 {
+    stop-color: gray;
+} 
+.fire .stop2 {
+    stop-color: gray;
+    offset: 1;
+} 
+.menu li {
+    -webkit-margin-end: 20px;
+    margin-inline-end: 20px;
+    cursor: pointer;
+} 
+.menu a {
+    display: block;
+} 
+.subMenu {  
+    position: absolute;
+    width: 100px;
+    height: auto; 
+    background-color: inherit;
+    text-align: center; 
+    inset-inline-start: 50%;
+    inset-block-start:20px;
+    background-color: var(--background-header);
+    display: none;
+    opacity: 0;
+    transition:3s;
+} 
+.darkmode .subMenu{
+    
+    background-color: var(--background-header-dark);
+} 
+.subMenu>li>a {
+    position: relative; 
+    display: block; 
+    width: 100px; 
+    border: 1px solid rgba(255, 255, 255, 0.362);
+    border-collapse: collapse; 
+    padding-block: 10px;
+} 
+.subMenu>li>a:hover {
+    background:var( --color-components);  
+    border: 1px solid  var( --color-components);
+    opacity: 1;
+    z-index: 2;
+} 
+.darkmode .subMenu>li>a:hover {
+    
+    background:var( --color-components-dark);  
+    border: 1px solid  var( --color-components-dark);
+} 
+.containerSubmenu:hover 
+.subMenu{
+    display: block;
+    opacity: 1;
+    z-index: 2;
+} 
+.right__options>button {
+    background: none;
+    border: 1px solid var( --color-components);
+    border-radius: 20px;
+    -webkit-margin-start: 20px;
+    margin-inline-start: 20px;
+    padding-block: 10px;
+    padding-inline: 20px;
+} 
+.darkmode .right__options>button {
+    border: 1px solid var( --color-components-dark);
+} 
+.right__options>button:hover{
+    
+    background:   var( --color-components);  
+    box-shadow:0px 0px 10px var( --color-components);
+} 
+.darkmode .right__options>button:hover{
+    background:   var( --color-components-dark);  
+    box-shadow:0px 0px 10px var( --color-components-dark);
+} 
+.right__options>button>span { 
+    -webkit-margin-start: 10px; 
+            margin-inline-start: 10px;
+} 
+.main {
+        position: relative;
+        -webkit-padding-before: 30px;
+                padding-block-start: 30px;
+        -webkit-padding-after: 60px;
+                padding-block-end: 60px;
+        background-color: var(--background-main); 
+    } 
+.darkmode .main {
+        
+        background-color: var(--background-main-dark); 
+    } 
+.main__container{
+        padding-block: 20px; 
+    } 
+.main_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+.main__header__mancha {
+        position: absolute;
+        inset-inline-start: 0px;
+        inset-block-start: -30px;
+        height: 220px;
+        width: 340px;
+        border-radius: 50%;
+        background: #302450;
+        filter: blur(20px);
+        border: none;
+        opacity: 0.4;
+        z-index: -1;
+    } 
+.main__container__header {
+        display: flex;
+        justify-content: space-between;
+        -webkit-margin-after: 10px;
+                margin-block-end: 10px;
+    } 
+.main__container__header>span {
+        font-size: 36px;
+        font-weight: 900;
+        color: white;
+    } 
+.main__container__header>a {} 
+.main__container__footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-block: 20px;
+    } 
+.button_carousel{
+        display: flex;
+    } 
+/*
+background: #;
+
+
+/* Ellipse 248 
+
+position: absolute;
+width: 528.92px;
+height: 327.27px;
+left: 0px;
+top: 65.41px;
+
+/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */ 
+/*
+ ::placeholder { 
+} 
+
+*/ 
+form input:focus {
+  border: 1px solid var(--color-components); 
+  background-color: var(--background-main); 
+  
+  box-shadow:0px 0px 14px var( --color-components); 
+  } 
+.container_form_nft{ 
+  display: flex;
+  flex-wrap: wrap; 
+  -moz-column-gap: 30px; 
+       column-gap: 30px;
+  justify-content: center; 
+} 
+.container_form_nft>form{ 
+  min-width: 300px;
+  width: calc(100% - 330px); 
+} 
+.imgNft{
+  opacity: 0;
+} 
+.form_title{
+  display: block;
+  font-size: 20px;
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; 
+} 
+form .form_title{
+  cursor: pointer;
+} 
+.form_nft_options{
+  display: flex;  
+  flex-wrap: wrap;
+justify-content: space-between;
+} 
+.form_nft_options>label{ 
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  min-width: 100px;
+} 
+.carousel {
+    position: relative;
+    width: 100%;
+    display: flex; 
+    overflow: hidden;
+} 
+.carousel__items {
+    position: relative; 
+    display: flex; 
+    width: 100%;  
+    transition: 3s ease-in-out;
+     
+} 
+.nft_item {
+    padding: 20px;
+    background-color: var(--background-nft);
+    border-radius: 20px;
+    width: 300px;
+    border: 1px solid var( --background-nft-borde);
+} 
+.darkmode .nft_item { 
+    background-color: var(--background-nft-dark);
+    border: 1px solid var( --background-nft-borde-dark); 
+} 
+.nft_item>.nft_img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background-color: #7A798A;
+    border-radius: 20px;
+    overflow: hidden;
+} 
+.nft_img>.option_nft{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;  
+    align-items: center;
+    background-color:black;
+    opacity: 0;
+    transition: 1s;
+    font-size: 20px;
+    z-index: 2;
+} 
+.likecontainer{
+    position: absolute;  
+    padding-block: 4px;
+    padding-inline: 10px;
+    display: flex;
+    gap:14px;
+    background-color: black;
+    z-index: 3;
+    color: white;
+    inset-inline-end: 10px;
+    inset-block-start: 4px;
+    border-radius: 10px; 
+    align-items: center;
+    font-size: 19px;
+} 
+.like>svg{
+    position: relative;
+    fill: white;
+    overflow: hidden;  
+} 
+.nft_img:hover .option_nft{
+
+    opacity: 0.8;
+} 
+.nft_item_footer>div {
+    display: flex;
+    justify-content: space-between;
+    -webkit-margin-before: 20px;
+            margin-block-start: 20px;
+} 
+.nft_item>.nft_img>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} 
+.section2>:first-child {
+    display: flex;
+} 
+.row_span>span {
+    display: block;
+} 
+.user_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #7A798A;
+    overflow: hidden;
+    -webkit-margin-end: 10px;
+            margin-inline-end: 10px;
+} 
+.user_img>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} 
+.opaque_color {
+    color: #8A8AA0;
+    font-size: 13px;
+} 
+.bsc{
+    border-radius:8px;
+    background: var(--color-components); 
+    padding-inline:8px ; 
+    padding-block:4px ;
+} 
+.nft_item .bsc{
+    color:white;
+} 
+.button_carousel{
+    display: flex;
+    gap: 6px;
+    margin-inline: 6px;
+} 
+.button_carousel> input{ 
+    all: unset; 
+    cursor: pointer;
+    padding: 4px; 
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid gray; 
+} 
+.darmode .button_carousel> input{
+    border: 2px solid white;
+} 
+.button_carousel> input:hover{  
+    box-shadow:0px 0px 6px var( --color-components); 
+} 
+.button_carousel> input:checked{
+    box-shadow:0px 0px 6px var( --color-components);
+    background-color: var( --color-components); 
+} 
+.iconBtn>svg:hover .iconBtn>svg{
+    box-shadow:0px 0px 6px var( --color-components);
+    background-color: var( --color-components); 
+} 
+.iconBtn{
+    background: none;
+    border: none;
+} 
+.nft_img svg{
+    fill:transparent;
+} 
+.nft_img .likeActivo svg{
+    fill:red;
+} 
+.login{ 
+    width: 100%;
+    max-width:700px ;  
+    text-align: center;
+} 
+.login >.title{
+    font-size: 36px;
+} 
+.login>div{
+    width: 100%;
+    margin-block: 30px; 
+} 
+.login>.divide{
+    position: relative;
+    border-bottom: 1px solid gray;
+} 
+.login>.divide>span{ 
+    position: relative;
+    inset-block-end: -8px;
+    background-color: var(--background-main);
+    padding-inline: 10px;
+} 
+.login__buttons{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    row-gap: 20px;
+    align-items: center; 
+    -moz-column-gap: 10px; 
+         column-gap: 10px;
+} 
+.login__buttons>button{  
+    min-width: 300px; 
+    width: 48%;
+    background: none;
+    padding-block: 8px;
+    padding-inline: 8px; 
+    border: 2px solid var( --color-components);
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0.6;
+} 
+.login__buttons>button>span{
+    position: relative;
+    -webkit-margin-start: 10px;
+            margin-inline-start: 10px;
+} 
+.form input[type='text'],
+.form input[type='number'],
+.form input[type='password'],
+.form input[type='email'],
+.form textarea,
+.drop_area,
+.form select{  
+    width: 100%; 
+    display: block;
+    background: none;
+    border: 1px solid rgba(128, 128, 128, 0.335); 
+    padding-block: 10px;
+    padding-inline: 10px;
+    outline: none;
+    border-radius: 10px; 
+} 
+.drop_area{
+    position: relative;
+    padding-block: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.drop_area>button{
+    background: none;
+    border: none;
+} 
+option{ 
+    background-color: var(--background-main); 
+} 
+.form input[type='checkbox']:hover{
+    cursor: pointer;
+} 
+.form>input{
+    margin-block: 20px;
+} 
+.drop_area:hover,
+.form input:hover,
+.form textarea:hover ,
+.form select:hover{
+    border: 1px solid var( --color-components);  
+    box-shadow:0px 0px 10px var( --color-components);
+} 
+.active{
+    border: 1px solid var( --color-components);  
+    box-shadow:0px 0px 18px var( --color-components);
+} 
+.form_auth>.options{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    -webkit-margin-after: 10px;
+            margin-block-end: 10px;
+} 
+.button{
+    width: 100%; 
+    background: none;
+    border: 1px solid gray;
+    padding-block: 10px;
+    margin-block: 10px;
+    outline: none;
+    border-radius: 30px;  
+    opacity: 0.6;
+} 
+.darkmode .button {
+    border: 1px solid rgba(255, 255, 255, 0.622);
+} 
+.button:hover,
+.login__buttons>button:hover{ 
+    background: var( --color-components);
+    opacity: 1;
+    border: 1px solid var( --color-components);  
+    box-shadow:0px 0px 10px var( --color-components);
+} 
+.checkbox{
+    position: relative;  
+    -webkit-margin-end: 6px;  
+            margin-inline-end: 6px;
+} 
+.register{
+    
+    width: 100%; 
+    margin-block: 60px;
+    display: flex;
+    justify-content: center;
+} 
+.register>.form_auth{
+    width: 500px;
+} 
+.footer {
+    margin-top: auto;
+    background-color: var(--background-footer);
+    padding-block: 30px;
+    min-height: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+} 
+.darkmode .footer{ 
+    background-color: var(--background-footer-dark);
+} 
+.footer>div {
+    width: 140px;
+    height: 200px;
+} 
+.footer>div:first-child,
+.footer>div:last-child {
+    width: 240px;
+    position: relative;
+} 
+.footer span {
+    display: block;
+} 
+.footer>div>nav>ul>li,
+footer>div>div,
+.footer>div>span,
+.footer>div>p {
+    position: relative;
+    -webkit-margin-after: 20px;
+    margin-block-end: 20px;
+} 
+.div__contact__button {
+    position: relative;
+    border: 1px solid rgba(199, 185, 185, 0.428);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+} 
+.social_media>button {
+    background-color: rgb(53, 53, 68);
+    border: transparent;
+    padding-inline: 8px;
+    padding-block: 6px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+} 
+.social_media>button>svg {
+    width: 14px;
+} 
+.footer>div>span {
+    font-size: 30px;
+    font-weight: 1000;
+    height: 30px;
+    display: flex;
+    align-items: center;
+} 
+.footer>div>span>svg {
+    height: 30px;
+} 
+.footer>div:not(:first-child)>span {
+    font-size: 16px;
+} 
+.social_media {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0; 
+} 
+.social_media>button:hover{ 
+    background: var( --color-components);  
+    box-shadow:0px 0px 10px var( --color-components);
+} 
+.darmode .social_media>button:hover{ 
+    background: var( --color-components-dark);  
+    box-shadow:0px 0px 10px var( --color-components-dark);
+} 
+.contact_input {
+    all: unset;
+    position: relative;
+    width: 70%;
+    padding-inline: 10px;
+    font-size: 12px;
+} 
+.contact_button {
+    position: relative;
+    width: 30%;
+    height: 30px;
+    background: var( --color-components);
+    border: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.428);
+    inset-inline-end: 0;
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+} 
+.darmode .contact_button {
+    background: var( --color-components-dark);
+} 
+.contact_button:hover{  
+    opacity: 1;
+    border-left: 1px solid var( --color-components);   
+} 
+.darkmode .contact_button:hover{   
+    border-left: 1px solid var( --color-components-dark);   
+} 
+.contact_button>svg {
+    width: 14px;
+} 
+.notvisible {
+    display: none;
+    background-color: red;
+} 
+@media (max-width: 900px) {
+    .header__container .menu {
+        display: none;
+    }
+} 
+@media (max-width: 719px) {
+    .container_form_nft>form{  
+        width: 100%;
+        -webkit-margin-before: 40px;
+                margin-block-start: 40px;
+    }
+
+} 
+@media (max-width: 699px) {
+    .login__buttons{ 
+        justify-content: space-evenly; 
+    }
+} 
+@media (max-width: 459px) {
+    .header__container,
+    .main,
+    .footer {
+        padding-inline: 10px;
+    }
+    .footer>div:last-child {
+        height: 100px;
+    }
+} 
+.errorPage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    word-break: break-all;
+    word-wrap: break-word;
+    row-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+} 
+.errorPage>img{
+  -webkit-animation: rotation 8s infinite linear;
+          animation: rotation 8s infinite linear; 
+} 
+.errorPage>img:hover{
+     
+    -webkit-animation-play-state: paused;
+     
+            animation-play-state: paused;
+    cursor: progress; 
+} 
+@-webkit-keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  } 
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

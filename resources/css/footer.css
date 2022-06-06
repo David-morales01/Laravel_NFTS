@@ -1,0 +1,134 @@
+.footer {
+    margin-top: auto;
+    background-color: var(--background-footer);
+    padding-block: 30px;
+    min-height: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.darkmode .footer{ 
+    background-color: var(--background-footer-dark);
+}
+.footer>div {
+    width: 140px;
+    height: 200px;
+}
+
+.footer>div:first-child,
+.footer>div:last-child {
+    width: 240px;
+    position: relative;
+}
+
+.footer span {
+    display: block;
+}
+
+.footer>div>nav>ul>li,
+footer>div>div,
+.footer>div>span,
+.footer>div>p {
+    position: relative;
+    -webkit-margin-after: 20px;
+    margin-block-end: 20px;
+}
+
+.div__contact__button {
+    position: relative;
+    border: 1px solid rgba(199, 185, 185, 0.428);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.social_media>button {
+    background-color: rgb(53, 53, 68);
+    border: transparent;
+    padding-inline: 8px;
+    padding-block: 6px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.social_media>button>svg {
+    width: 14px;
+}
+
+.footer>div>span {
+    font-size: 30px;
+    font-weight: 1000;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer>div>span>svg {
+    height: 30px;
+}
+
+.footer>div:not(:first-child)>span {
+    font-size: 16px;
+}
+
+.social_media {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0; 
+}
+.social_media>button:hover{ 
+    background: var( --color-components);  
+    box-shadow:0px 0px 10px var( --color-components);
+}
+.darmode .social_media>button:hover{ 
+    background: var( --color-components-dark);  
+    box-shadow:0px 0px 10px var( --color-components-dark);
+}
+.contact_input {
+    all: unset;
+    position: relative;
+    width: 70%;
+    padding-inline: 10px;
+    font-size: 12px;
+}
+
+.contact_button {
+    position: relative;
+    width: 30%;
+    height: 30px;
+    background: var( --color-components);
+    border: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.428);
+    inset-inline-end: 0;
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.darmode .contact_button {
+    background: var( --color-components-dark);
+}
+.contact_button:hover{  
+    opacity: 1;
+    border-left: 1px solid var( --color-components);   
+}
+.darkmode .contact_button:hover{   
+    border-left: 1px solid var( --color-components-dark);   
+}
+.contact_button>svg {
+    width: 14px;
+}
+
+.notvisible {
+    display: none;
+    background-color: red;
+}

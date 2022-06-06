@@ -1,0 +1,22 @@
+:root{
+    --background-header:#656474 ;
+    --background-header-color2:#656474 ;
+    --background-main:#ffffff ;
+    --background-footer:#f9f8f8 ;
+    --background-nft:white ;
+    --background-nft-borde:#CACACA ;
+    --color-text:black;
+    --color-svg:white;
+    --color-components:#5142FC;
+ 
+    --background-header-dark:rgb(20, 20, 31) ;
+    --background-header-color2-dark:#32323f ;
+    --background-main-dark:rgb(20, 20, 31) ;
+    --background-footer-dark:#0d0d11 ;
+    --color-text-dark:white;
+    
+    --background-nft-borde-dark:transparent ;
+    --background-nft-dark:#343444 ;
+    --color-svg-dark:white;
+    --color-components-dark:#5142FC;
+}

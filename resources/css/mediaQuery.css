@@ -1,0 +1,31 @@
+@media (max-width: 900px) {
+    .header__container .menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 719px) {
+    .container_form_nft>form{  
+        width: 100%;
+        margin-block-start: 40px;
+    }
+
+}
+@media (max-width: 699px) {
+    .login__buttons{ 
+        justify-content: space-evenly; 
+    }
+}
+
+@media (max-width: 459px) {
+    .header__container,
+    .main,
+    .footer {
+        padding-inline: 10px;
+    }
+    .footer>div:last-child {
+        height: 100px;
+    }
+}
+

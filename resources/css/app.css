@@ -1,0 +1,10 @@
+@import 'variables.css'; 
+@import 'style.css'; 
+@import 'header.css'; 
+@import 'main.css'; 
+@import 'components.css'; 
+@import 'carousel.css'; 
+@import 'form.css'; 
+@import 'footer.css'; 
+@import 'mediaQuery.css';
+@import 'errors.css';

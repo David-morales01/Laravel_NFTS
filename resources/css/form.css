@@ -1,0 +1,139 @@
+
+.login{ 
+    width: 100%;
+    max-width:700px ;  
+    text-align: center;
+}
+.login >.title{
+    font-size: 36px;
+}
+.login>div{
+    width: 100%;
+    margin-block: 30px; 
+}
+.login>.divide{
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+.login>.divide>span{ 
+    position: relative;
+    inset-block-end: -8px;
+    background-color: var(--background-main);
+    padding-inline: 10px;
+}
+.login__buttons{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    row-gap: 20px;
+    align-items: center; 
+    column-gap: 10px;
+}
+
+.login__buttons>button{  
+    min-width: 300px; 
+    width: 48%;
+    background: none;
+    padding-block: 8px;
+    padding-inline: 8px; 
+    border: 2px solid var( --color-components);
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0.6;
+}
+.login__buttons>button>span{
+    position: relative;
+    margin-inline-start: 10px;
+}
+.form input[type='text'],
+.form input[type='number'],
+.form input[type='password'],
+.form input[type='email'],
+.form textarea,
+.drop_area,
+.form select{  
+    width: 100%; 
+    display: block;
+    background: none;
+    border: 1px solid rgba(128, 128, 128, 0.335); 
+    padding-block: 10px;
+    padding-inline: 10px;
+    outline: none;
+    border-radius: 10px; 
+} 
+.drop_area{
+    position: relative;
+    padding-block: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.drop_area>button{
+    background: none;
+    border: none;
+}
+option{ 
+    background-color: var(--background-main); 
+}
+
+.form input[type='checkbox']:hover{
+    cursor: pointer;
+}
+.form>input{
+    margin-block: 20px;
+}
+.drop_area:hover,
+.form input:hover,
+.form textarea:hover ,
+.form select:hover{
+    border: 1px solid var( --color-components);  
+    box-shadow:0px 0px 10px var( --color-components);
+} 
+.active{
+    border: 1px solid var( --color-components);  
+    box-shadow:0px 0px 18px var( --color-components);
+}
+.form_auth>.options{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-block-end: 10px;
+}
+
+.button{
+    width: 100%; 
+    background: none;
+    border: 1px solid gray;
+    padding-block: 10px;
+    margin-block: 10px;
+    outline: none;
+    border-radius: 30px;  
+    opacity: 0.6;
+}
+.darkmode .button {
+    border: 1px solid rgba(255, 255, 255, 0.622);
+}
+.button:hover,
+.login__buttons>button:hover{ 
+    background: var( --color-components);
+    opacity: 1;
+    border: 1px solid var( --color-components);  
+    box-shadow:0px 0px 10px var( --color-components);
+}
+.checkbox{
+    position: relative;  
+    margin-inline-end: 6px;
+}
+.register{
+    
+    width: 100%; 
+    margin-block: 60px;
+    display: flex;
+    justify-content: center;
+}
+.register>.form_auth{
+    width: 500px;
+}
